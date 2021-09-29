@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+body{
+  background-color: #F5F5F5;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-app{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+.main-header{
+  font-size: 30px;
+  font-weight: bold;
+  color:#6699CC;
+  text-align: center;
+  padding: 20px 0px;
+}
+ 
+.employee-icons{
+  display: flex;
+  justify-content: space-evenly;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.table-wrapper{
+  background-color: #F5F5F9;
+  height: 80vh;
+  width: 90%;
+  margin: auto;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  overflow: scroll;
+}
+table{
+  width: 100%;
+}
+
+
+table thead{
+  position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #F5F5F9;
+    font-weight: 600;
+    border-bottom: 1px solid;
+    text-decoration: underline;
+}
+
+
+table tr{
+  height:25px;
+  text-align: center;
+
+}
+
+
+.form-popup{
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.formContainer{
+   
+  width:50%;
+  background-color: #F5F5F9;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: auto;
+  height: fit-content;
+text-align: center;
+}
+
+form{
+  margin: auto;
+  width: 50%;
+}
+
+.formInput{
+    display: grid;
+    margin-top:20px;
+    text-align: left;
+
+}
+.formInput label{
+margin-bottom: 10px;
+}
+.formInput input, .formInput select{
+  height:25px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.formTitle{
+  font-size: 30px;
+  font-weight: bold;
+  color:#6699CC;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.submitFormBtn{
+  margin: 30px 0px;
+  font-size: 20px;
+  background-color: #6699CC;
+  font-weight: 500;
+  border-radius: 5px;
+  height: 30px;
+  width: fit-content;
+}
+.btn-close{
+  margin-right: -90%;
+  margin-top: 5px;
+ 
+}
+.btn-close, .employee-add-icon, .employee-update-icon, .employee-delete-icon{
+  background-color: transparent;
+   border: none;
+   cursor: pointer;
+}
+
+.form-header{
+  display: flex;
 }
